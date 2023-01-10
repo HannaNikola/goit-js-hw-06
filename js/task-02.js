@@ -20,10 +20,10 @@ const ingredients = [
 ];
   
  const ingredientsEl = document.querySelector('#ingredients');
-for (const el of ingredients) {
+for (const ingredient of ingredients) {
   const listEl = document.createElement('li');
   listEl.classList.add('item');
-  listEl.textContent = ingredients;
+  listEl.textContent = ingredient;
   
   ingredientsEl.append(listEl)
 };
