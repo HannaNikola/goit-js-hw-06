@@ -1,4 +1,6 @@
-// Напиши скрипт, який змінює кольори фону елемента <body> через інлайн-стиль по кліку на button.change-color і виводить значення кольору в span.color.
+// Напиши скрипт, який змінює кольори фону елемента <body> через інлайн-стиль
+//  по кліку на button.change - color і виводить значення кольору в 
+// span.color.
 
 // <div class="widget">
 //   <p>Background color: <span class="color">-</span></p>

@@ -11,18 +11,46 @@
 // Оновлюй інтерфейс новим значенням змінної counterValue.
 
 const counterItem = document.querySelector('#counter');
-const decrementItem = document.querySelector('[data-action="decrement]');
+const decrementItem = document.querySelector('[data-action="decrement"]');
 const incrementItem = document.querySelector('[data-action="increment"]');
 const valueItem = document.querySelector('#value');
-console.log(incrementItem);
 
-const counterValue = 0;
- decrementItem.addEventListener("click", () => {
-     this.value += 1;
-     console.log(this.decrement);
- })
 
- incrementItem.addEventListener("click", () => {
-     this.value += 1;
-     console.log(this.increment);
- })
+ const counterValue = 0;
+// decrementItem.addEventListener("click", () => {
+//     counterValue -= 1;
+//     valueItem.textContent = counterValue;
+//     console.log(counterValue);
+      
+     
+//   })
+
+//  incrementItem.addEventListener("click", () => {
+//      counterValue += 1;
+//      valueItem.textContent = counterValue;
+     
+    
+//  })
+
+
+decrementItem.addEventListener('click',  () => {
+    console.log('click decrement');
+    
+})
+
+ decrementItem = (event) => {
+     counterValue -= 1;
+     valueItem.textContent = counterValue;
+ }
+
+
+
+incrementItem.addEventListener('click', function () {
+    console.log('click increment');
+    
+})
+incrementItem = (event) => {
+    
+    counterValue += 1;
+    valueItem.textContent = counterValue;
+ }
