@@ -12,6 +12,7 @@
 
 const counterItem = document.querySelector('#counter');
 const decrementItem = document.querySelector('[data-action="decrement"]');
+console.log(decrementItem);
 const incrementItem = document.querySelector('[data-action="increment"]');
 const valueItem = document.querySelector('#value');
 
@@ -33,24 +34,24 @@ const valueItem = document.querySelector('#value');
 //  })
 
 
-decrementItem.addEventListener('click',  () => {
-    console.log('click decrement');
+//  decrementItem.addEventListener('click',  function() {
+//     console.log('click decrement');
     
-})
+// })
 
- decrementItem = (event) => {
-     counterValue -= 1;
-     valueItem.textContent = counterValue;
- }
+//  decrementItem = (event)  {
+//     counterValue -= 1;
+//     valueItem.textContent = counterValue;
+// };
 
 
 
-incrementItem.addEventListener('click', function () {
-    console.log('click increment');
+// incrementItem.addEventListener('click', function () {
+//     console.log('click increment');
     
-})
-incrementItem = (event) => {
+// })
+//   incrementItem = (event) => {
     
-    counterValue += 1;
-    valueItem.textContent = counterValue;
- }
+//     counterValue += 1;
+//     valueItem.textContent = counterValue;
+//  }
