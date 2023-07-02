@@ -24,11 +24,23 @@ button {
 }
 
 .gallery{
- width: 470px;
-height: 320px; 
+    padding: 30px;
 display: flex;
 flex-direction: column;
 margin: auto;
 gap: 50px;
+list-style: none;
+background-color:#393925;
 
 }
+
+.img {
+    width: 670px;
+    height: 320px;
+    display: flex;
+    margin: auto;
+    border: 2px solid rgb(32, 29, 29);
+   
+   
+}
+
