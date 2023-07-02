@@ -6,7 +6,32 @@
 // <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
 
 
-const inputElement = document.querySelector("#name-input");
-console.log(inputElement);
-const outputElement = document.querySelector("#name-output");
-console.log(outputElement);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const inputElement = document.querySelector("#name-input");
+// console.log(inputElement);
+// const outputElement = document.querySelector("#name-output");
+// console.log(outputElement);

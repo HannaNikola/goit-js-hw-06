@@ -10,48 +10,36 @@
 // Додай слухачів кліків до кнопок, всередині яких збільшуй або зменшуй значення лічильника.
 // Оновлюй інтерфейс новим значенням змінної counterValue.
 
-const counterItem = document.querySelector('#counter');
-const decrementItem = document.querySelector('[data-action="decrement"]');
-console.log(decrementItem);
-const incrementItem = document.querySelector('[data-action="increment"]');
-const valueItem = document.querySelector('#value');
 
 
- const counterValue = 0;
-// decrementItem.addEventListener("click", () => {
-//     counterValue -= 1;
-//     valueItem.textContent = counterValue;
-//     console.log(counterValue);
-      
-     
-//   })
-
-//  incrementItem.addEventListener("click", () => {
-//      counterValue += 1;
-//      valueItem.textContent = counterValue;
-     
-    
-//  })
+const counterEl = document.querySelector('#counter');
+const decrementEl = document.querySelector('[data-action="decrement"]');
+const volueEl = document.querySelector('#value');
+const incrementEl = document.querySelector('[data-action="increment"]');
+console.log(counterEl);
+console.log(decrementEl);
+console.log(volueEl);
+console.log(incrementEl);
 
 
-//  decrementItem.addEventListener('click',  function() {
-//     console.log('click decrement');
-    
-// })
+let counterVolue = 0; 
 
-//  decrementItem = (event)  {
-//     counterValue -= 1;
-//     valueItem.textContent = counterValue;
-// };
+decrementEl.addEventListener('click', countDecrement);
+
+
+function countDecrement () {
+    counterVolue -= 1;
+    volueEl.textContent = counterVolue;
+    console.log(counterVolue);
+
+};
 
 
 
-// incrementItem.addEventListener('click', function () {
-//     console.log('click increment');
-    
-// })
-//   incrementItem = (event) => {
-    
-//     counterValue += 1;
-//     valueItem.textContent = counterValue;
-//  }
+incrementEl.addEventListener('click', countIncrement);
+
+function countIncrement() {
+    counterVolue += 1;
+    volueEl.textContent = counterVolue;
+    console.log(counterVolue);
+}
