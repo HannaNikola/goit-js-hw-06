@@ -6,6 +6,15 @@
 // <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
 
 
+const inputNameEl = document.querySelector('#name-input');
+const spanElement = document.querySelector('#name-output');
+
+console.log(inputNameEl);
+console.log(spanElement);
+
+inputNameEl.addEventListener('change', (event) => {
+    spanElement.textContent = event.currentTarget.value
+});
 
 
 
@@ -31,7 +40,6 @@
 
 
 
-// const inputElement = document.querySelector("#name-input");
-// console.log(inputElement);
-// const outputElement = document.querySelector("#name-output");
-// console.log(outputElement);
+
+
+
