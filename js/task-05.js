@@ -12,7 +12,7 @@ const spanElement = document.querySelector('#name-output');
 console.log(inputNameEl);
 console.log(spanElement);
 
-inputNameEl.addEventListener('change', (event) => {
+inputNameEl.addEventListener('input', (event) => {
     spanElement.textContent = event.currentTarget.value
 });
 
