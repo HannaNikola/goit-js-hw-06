@@ -25,34 +25,32 @@
 // #validation-input.invalid {
 //   border-color: #f44336;
 // }
-// const validInputEl = document.querySelector('#validation-input.valid ');
-// const invalidInputEl = document.querySelector('#validation-input.invalid');
-// const inputElement = document.querySelector('#validation-input');
-// console.log(validInputEl);
-// console.log(invalidInputEl);
-// console.log(inputElement);
 
 
 
 
-// inputElement.addEventListener("blur", (validationElement) => {
-
-//     if(inputElementEl.value.length === validInputEl)
-// }) 
+const inputElement = document.querySelector('#validation-input');
+console.log(inputElement);
 
 
 
-// const inputEl = document.querySelector("#validation-input");
-// inputEl.addEventListener('blur', validateInput);
-// const inputLength = Number(inputEl.dataset.length);
-// // console.log(inputLength)
 
-// function validateInput() {
-//    if(inputEl.value.length === inputLength){
-//     inputEl.classList.add('valid');
-//     inputEl.classList.remove('invalid');
-//   } else {
-//     inputEl.classList.add('invalid');
-//      inputEl.classList.remove('valid');
-//   }
-// };
+inputElement.addEventListener("blur", validationElement);
+
+const inputLength = Number(inputElement.dataset.length);
+console.log(inputLength);
+
+function validationElement() {
+    if (inputElement.value.length === inputLength) {
+        inputElement.classList.add('valid');
+        inputElement.classList.remove('invalid');
+
+    } else {
+        
+        inputElement.classList.add('invalid');
+        inputElement.classList.remove('valid');
+    }
+}
+
+
+
