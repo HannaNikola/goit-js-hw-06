@@ -34,13 +34,19 @@ function formSubmit(event) {
          elements: { email, password }
      } = event.currentTarget;
 
-    if (email.value  === " " || password.value === " ") {
-         return ("Please fill in all the fields!");
+    if (email.value === "" || password.value === "") {
+        return alert("Please fill in all the fields!");
 
-    } console.log(`Login: ${email.value}, Password: ${password.value}`);
-      event.currentTarget.reset();
+    } else {
+        let formVolue = {
+            email: email.value,
+            password: password.value,
+        };
+        console.log(formVolue);
+     }
+    
+       event.currentTarget.reset();
 };
-
 
 
 
