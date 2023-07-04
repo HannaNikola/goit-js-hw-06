@@ -13,8 +13,16 @@ console.log(inputNameEl);
 console.log(spanElement);
 
 inputNameEl.addEventListener('input', (event) => {
-    spanElement.textContent = event.currentTarget.value
+  
+
+    if (inputNameEl.value === "") {
+        spanElement.textContent = "Anonymous";
+        
+    } else {
+        spanElement.textContent = event.currentTarget.value;
+    } 
 });
+
 
 
 
