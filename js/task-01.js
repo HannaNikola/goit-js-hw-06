@@ -7,7 +7,7 @@
 
 // В результаті, в консолі будуть виведені наступні повідомлення.
 
-const cotegoriesEl = document.querySelectorAll('li');
+const cotegoriesEl = document.querySelectorAll('.item');
 
 console.log("Number of categories:", cotegoriesEl.length);
 

@@ -15,3 +15,4 @@ inputElement.addEventListener('input', chengeSizeText);
 function chengeSizeText() {
     spanElement.style.fontSize = inputElement.value + "px";
 }
+chengeSizeText();
