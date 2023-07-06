@@ -19,14 +19,14 @@ inputNameEl.addEventListener('input', (event) => {
         spanElement.textContent = "Anonymous";
         
     } else {
-        spanElement.textContent = event.currentTarget.value;
+        spanElement.textContent = event.currentTarget.value.trim();
     } 
 });
 
 
 
 
-
+ 
 
 
 
