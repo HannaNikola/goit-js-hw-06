@@ -31,6 +31,7 @@ function getRandomHexColor() {
 function chengeColorBtn(event) {
   const newColor = getRandomHexColor();
    body.style.backgroundColor = newColor;
-   spanEl.textContent = newColor;
+  spanEl.textContent = newColor;
+  
 }
 
